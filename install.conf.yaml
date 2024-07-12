@@ -1,0 +1,23 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc: zshrc
+    ~/.config/nvim:
+      path: nvim/**
+      glob: true
+      create: true
+    ~/.config/sway:
+      path: sway/**
+      glob: true
+      create: true
+    ~/.config/waybar:
+      path: waybar/**
+      glob: true
+      create: true
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
