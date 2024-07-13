@@ -30,6 +30,4 @@ opt.splitbelow = true
 opt.ignorecase = true
 opt.smartcase = true
 
--- Neovide
-vim.o.guifont = "Agave Nerd Font Mono:h14" -- text below applies for VimScript
 

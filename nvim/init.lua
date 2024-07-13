@@ -10,24 +10,23 @@ require('config.keymaps')
 require('config.colorscheme')
 
 -- ---------- 插件配置 ----------
-
 -- 状态栏
 require("plugins.lualine")
 -- 文件管理
-require("plugins/nvim-tree")
+require("plugins.nvim-tree")
 -- 自动补全
-require("plugins/treesitter")
+require("plugins.treesitter")
 -- LSP
-require("plugins/lsp")
+require("plugins.lsp")
 -- cmp
-require("plugins/cmp")
+require("plugins.cmp")
 -- 注释
-require("plugins/comment")
+require("plugins.comment")
 -- 自动配对
-require("plugins/autopairs")
+require("plugins.autopairs")
 -- 缓冲区
-require("plugins/bufferline")
+require("plugins.bufferline")
 -- git
-require("plugins/gitsigns")
+require("plugins.gitsigns")
 -- telescope
-require("plugins/telescope")
+require("plugins.telescope")

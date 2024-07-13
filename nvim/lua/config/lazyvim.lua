@@ -72,9 +72,31 @@ local plugins = {
       { "<leader>vv", "<cmd>LoveRun<cr>", ft = "lua", desc = "Run LÖVE" },
       { "<leader>vs", "<cmd>LoveStop<cr>", ft = "lua", desc = "Stop LÖVE" },
     },
-  }
+  },
+
+  --rust
+  {
+  'mrcjkb/rustaceanvim',
+  version = '^4', -- Recommended
+  lazy = false, -- This plugin is already lazy
+}
 
 }
 local opts = {} -- 注意要定义这个变量
 
 require("lazy").setup(plugins, opts)
+
+--fix LuaSnip按键跳转冲突问题
+
+
+vim.api.nvim_create_autocmd('ModeChanged', {
+  pattern = '*',
+  callback = function()
+    if ((vim.v.event.old_mode == 's' and vim.v.event.new_mode == 'n') or vim.v.event.old_mode == 'i')
+        and require('luasnip').session.current_nodes[vim.api.nvim_get_current_buf()]
+        and not require('luasnip').session.jump_active
+    then
+      require('luasnip').unlink_current()
+    end
+  end
+})
