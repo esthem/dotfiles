@@ -35,19 +35,27 @@
     ],
     // Modules configuration
     "sway/workspaces": {
+        "persistent-workspaces": {
+            "1:1.Home":[],
+            "2:2.Web":[],
+            "3:3.Code":[],
+            "4:4.Tool":[],
+            "5:5.Media":[]
+        },
         "disable-scroll": true,
         "all-outputs": true,
         "warp-on-scroll": false,
-        "format": "{name}: {icon}",
+        "format": "{icon}: {name}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
+            "1.Home": "",
+            "2.Web": "",
+            "3.Code": "",
+            "4.Tool": "",
+            "5.Media": "",
             "urgent": "",
-            "focused": "",
-            "default": ""
+            "default": ""
+            //"focused": "",
+            //"default": ""
         }
     },
     "keyboard-state": {
