@@ -46,8 +46,7 @@ bindsym Mod4+Shift+v exec clipman pick --tool=CUSTOM --tool-args="fuzzel -d"
 # output * bg /usr/share/wallpapers/Shell/contents/images/5120x2880.jpg fill
 
 # output * bg /home/wenhan/Pictures/Wallpapers/wallhaven-zyr8gw.jpg fill
-output * bg /home/wenhan/Pictures/Wallpapers/wallhaven-ex21vr.jpg fill
-
+output * bg /home/wenhan/Pictures/Wallpapers/wallhaven-5wz9p9.png fill
 #
 # Example configuration:
 #
@@ -171,12 +170,12 @@ output * bg /home/wenhan/Pictures/Wallpapers/wallhaven-ex21vr.jpg fill
     for_window [class="xdg-desktop-portal-kde"] floating enable
     for_window [class="ksysguard"] floating enable
     for_window [class="ksysguard"] sticky enable
-    #for_window [app_id="mpv"] layout tabbed
+    for_window [app_id="mpv"] layout tabbed
     for_window [class="Wine"] floating enable
     for_window [app_id="lutris"] floating enable
     for_window [instance="Godot_Engine"] floating enable
-    for_window [title="App"] floating enable
     for_window [app_id="bevy"] floating enable
+    for_window [class="Unity"] floating enable
 
 # Layout stuff:
 #
@@ -259,9 +258,17 @@ bar {
     swaybar_command waybar
 }
 
-# font pango: monospace 0.001
-# titlebar_border_thickness 0
-# titlebar_padding 0
+font pango: monospace 0.002
+titlebar_border_thickness 0
+titlebar_padding 0
+
+# TokyoNight theme
+# Property Name             Border  BG      Text    Indicator Child-border
+# client.focused              #0a0b16 #2f343f #4477ff #4477ff   #2f343f
+# client.focused_inactive     #2f343f #2f343f #d8dee8 #2f343f   #2f343f
+# client.unfocused            #2f343f #2f343f #d8dee8 #2f343f   #2f343f
+# client.urgent               #2f343f #2f343f #d8dee8 #2f343f   #2f343f
+# client.placeholder          #2f343f #2f343f #d8dee8 #2f343f   #2f343f
 
 # Set Windows Opacity
 bindsym Mod4+Alt+7 exec swaymsg opacity 0.7
