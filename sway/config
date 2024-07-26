@@ -46,7 +46,7 @@ bindsym Mod4+Shift+v exec clipman pick --tool=CUSTOM --tool-args="fuzzel -d"
 # output * bg /usr/share/wallpapers/Shell/contents/images/5120x2880.jpg fill
 
 # output * bg /home/wenhan/Pictures/Wallpapers/wallhaven-zyr8gw.jpg fill
-output * bg /home/wenhan/Pictures/Wallpapers/wallhaven-5wz9p9.png fill
+output * bg /home/wenhan/Pictures/Wallpapers/wallhaven-l3km3y.png fill
 #
 # Example configuration:
 #

@@ -18,6 +18,10 @@
       path: waybar/**
       glob: true
       create: true
+    ~/.config/ranger:
+      path: ranger/**
+      glob: true
+      create: true
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
