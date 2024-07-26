@@ -107,3 +107,6 @@ source $ZSH/oh-my-zsh.sh
 alias vim='nvim'
 alias vi='nvim'
 alias v='nvim'
+
+# Use lzg Replace lazygit
+alias lzg="lazygit"
